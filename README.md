@@ -1,72 +1,28 @@
-# Interactive Stock Market Analysis and Forecast Tool
+# 📊 Interactive Stock Forecast Tool
 
-A full-stack web application that provides interactive stock market analysis and forecasting using machine learning.
+Built in 6 hours for a hackathon! 🏆
 
-## Features
+## 🔧 Stack
+- FastAPI + Prophet
+- React + Tailwind + Chart.js
 
-- Real-time stock data visualization
-- Machine learning-based price forecasting
-- Interactive user interface
-- Historical data analysis
-- Confidence intervals for predictions
+## 🔮 Features
+- Stock search
+- 7-day ML forecast
+- Interactive chart
 
-## Tech Stack
+## 🚀 Run Locally
 
-- Frontend: React.js, Chart.js
-- Backend: Flask (Python)
-- Machine Learning: Prophet
-- Data Source: yfinance
-
-## Project Structure
-
-```
-.
-├── frontend/           # React frontend application
-├── backend/           # Flask backend server
-├── requirements.txt   # Python dependencies
-└── README.md         # Project documentation
+### Backend
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
 ```
 
-## Setup Instructions
-
-### Backend Setup
-1. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the Flask server:
-   ```bash
-   cd backend
-   python app.py
-   ```
-
-### Frontend Setup
-1. Install dependencies:
-   ```bash
-   cd frontend
-   npm install
-   ```
-
-2. Start the development server:
-   ```bash
-   npm start
-   ```
-
-## API Endpoints
-
-- `GET /forecast?ticker=<symbol>&days=<number>`
-  - Returns historical and forecasted stock data
-  - Parameters:
-    - ticker: Stock symbol (e.g., AAPL)
-    - days: Number of days to forecast
-
-## License
-
-MIT 
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
